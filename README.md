@@ -12,7 +12,7 @@
 **Codificação**
   * Patricia Costa
   
- **Avaliação do Protótipo**
+ **Apresentação/Relatório**
   * Guilherme Doutor
 
 
