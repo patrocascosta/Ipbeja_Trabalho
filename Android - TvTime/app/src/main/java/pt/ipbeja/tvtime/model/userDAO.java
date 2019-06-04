@@ -1,4 +1,4 @@
-package pt.ipbeja.tvtime.DAO;
+package pt.ipbeja.tvtime.model;
 
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
