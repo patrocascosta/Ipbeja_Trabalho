@@ -10,13 +10,13 @@ import java.util.List;
 @Dao
 public interface UserDAO {
 
-@Query("SELECT * From User")
-public List<User>GetAllUsers();
+    @Query("SELECT * From User")
+    public List<user>GetAllUsers();
 
     @Update
-    public void update (User User);
+    public void update (user User);
 
     @Insert
-    public void insert();
+    public void insert(user User);
 
 }
