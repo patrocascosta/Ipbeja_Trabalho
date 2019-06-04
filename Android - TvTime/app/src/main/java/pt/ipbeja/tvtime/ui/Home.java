@@ -1,7 +1,9 @@
-package pt.ipbeja.tvtime;
+package pt.ipbeja.tvtime.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import pt.ipbeja.tvtime.R;
 
 public class Home extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package pt.ipbeja.tvtime;
+package pt.ipbeja.tvtime.model;
 
 public class Temporadas {
     private long idTemporada;
