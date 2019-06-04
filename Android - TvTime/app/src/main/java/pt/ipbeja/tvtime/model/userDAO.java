@@ -12,9 +12,6 @@ import pt.ipbeja.tvtime.User;
 @Dao
 public interface userDAO {
 
-@Query("SELECT UserId AND Password FROM User") //Selecionar o user name e a password
-public List<User>GetUserPassword();
-
 @Query("SELECT * From User")
 public List<User>GetAllUsers();
 
@@ -22,6 +19,6 @@ public List<User>GetAllUsers();
     public void update (User User);
 
     @Insert
-    public void Insert
+    public void insert();
 
 }
