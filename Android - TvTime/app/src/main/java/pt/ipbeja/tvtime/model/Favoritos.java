@@ -1,13 +1,13 @@
-package pt.ipbeja.tvtime;
+package pt.ipbeja.tvtime.model;
 
-public class favoritos {
+public class Favoritos {
     private long idUser;
     private long idSerie;
     private boolean favorito;
 
 
 
-    public favoritos(long idUser,long idSerie, boolean favorito ){
+    public Favoritos(long idUser, long idSerie, boolean favorito ){
         this.idUser= idUser;
         this.idSerie=idSerie;
         this.favorito=favorito;

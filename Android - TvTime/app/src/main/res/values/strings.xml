@@ -2,4 +2,5 @@
     <string name="app_name">TvTime</string>
     <string name="Email">Email</string>
     <string name="Password">Password</string>
+    <string name="title_activity_favoritos">FavoritosActivity</string>
 </resources>

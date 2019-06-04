@@ -7,10 +7,8 @@ import android.arch.persistence.room.Update;
 
 import java.util.List;
 
-import pt.ipbeja.tvtime.User;
-
 @Dao
-public interface userDAO {
+public interface UserDAO {
 
 @Query("SELECT * From User")
 public List<User>GetAllUsers();

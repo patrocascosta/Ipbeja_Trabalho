@@ -1,4 +1,4 @@
-package pt.ipbeja.tvtime;
+package pt.ipbeja.tvtime.ui;
 
 import android.content.Context;
 import android.widget.BaseAdapter;
