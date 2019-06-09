@@ -19,4 +19,7 @@ public interface UserDAO {
     @Insert
     public void insert(user User);
 
+    @Insert
+    public void insertAll(List<user> InsertAll);
+
 }
