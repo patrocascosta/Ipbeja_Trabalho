@@ -6,105 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".ui.Home">
 
-    <TextView
-        android:id="@+id/cat3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="TextView"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/cat2"
-        app:layout_constraintTop_toBottomOf="@+id/image4" />
-
-    <TextView
-        android:id="@+id/cat2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
-        app:layout_constraintEnd_toStartOf="@+id/cat3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image3" />
-
-    <TextView
-        android:id="@+id/cat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="TextView"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/image3"
-        app:layout_constraintEnd_toStartOf="@+id/cat1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image1" />
-
     <ImageView
         android:id="@+id/image4"
-        android:layout_width="159dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/cat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/image3"
-        app:layout_constraintTop_toBottomOf="@+id/cat1"
-        tools:srcCompat="@tools:sample/avatars[1]" />
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        tools:srcCompat="@drawable/Blacklist" />
 
     <ImageView
         android:id="@+id/image1"
-        android:layout_width="159dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/image3"
         app:layout_constraintEnd_toStartOf="@+id/image2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HomeBar"
-        tools:srcCompat="@tools:sample/avatars[1]" />
+        tools:srcCompat="@drawable/The_Walking_Dead" />
 
     <ImageView
         android:id="@+id/image3"
-        android:layout_width="159dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/cat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toStartOf="@+id/image4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cat"
-        tools:srcCompat="@tools:sample/avatars[1]" />
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        tools:srcCompat="@drawable/Riverdale" />
 
     <ImageView
         android:id="@+id/image2"
-        android:layout_width="159dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/cat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/image4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/image1"
         app:layout_constraintTop_toBottomOf="@+id/HomeBar"
-        tools:srcCompat="@tools:sample/avatars[1]" />
-
-    <TextView
-        android:id="@+id/cat1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="TextView"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/image4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/cat"
-        app:layout_constraintTop_toBottomOf="@+id/image2" />
+        tools:srcCompat="@drawable/simp" />
 
     <ImageView
         android:id="@+id/HomeBar"
@@ -193,5 +137,50 @@
         app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toEndOf="@+id/imageView13"
         app:srcCompat="@drawable/Ferramentas" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorBar"
+        android:text="Thriller"
+        app:layout_constraintEnd_toEndOf="@+id/image1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image1"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:background="@color/colorBar"
+        android:text="Comedia"
+        app:layout_constraintEnd_toEndOf="@+id/image2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:background="@color/colorBar"
+        android:text="Crime"
+        app:layout_constraintEnd_toEndOf="@+id/image4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image4"
+        app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="149dp"
+        android:layout_height="37dp"
+        android:background="@color/colorBar"
+        android:text="Drama"
+        app:layout_constraintEnd_toEndOf="@+id/image3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image3"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
 
 </android.support.constraint.ConstraintLayout>
