@@ -1,6 +1,11 @@
 package pt.ipbeja.tvtime.model;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
+@Entity
 public class Series {
+    @PrimaryKey(autoGenerate = true)
     private long idSerie;
     private String nomeSerie;
     private int idCategoria;
@@ -10,6 +15,7 @@ public class Series {
 
 
     public Series(long idSerie, String nomeSerie, int idCategoria, int imdb, String descricao, String imagem){
+
         this.idSerie= idSerie;
         this.nomeSerie= nomeSerie;
         this.idCategoria= idCategoria;

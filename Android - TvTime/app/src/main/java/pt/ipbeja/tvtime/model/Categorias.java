@@ -1,6 +1,12 @@
 package pt.ipbeja.tvtime.model;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
+@Entity
+
 public class Categorias {
+    @PrimaryKey(autoGenerate = true)
     private int idCategoria;
     private String nomeCategoria;
 
