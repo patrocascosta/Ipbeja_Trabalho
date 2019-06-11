@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 
 import pt.ipbeja.tvtime.R;
-import pt.ipbeja.tvtime.model.AppDatabase;
-import pt.ipbeja.tvtime.model.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        User user = AppDatabase.getInstance(this).getUserDAO().getUserByEmail(email);
+        User user = AppDatabase.getInstance(this).getUserDao().getUserByEmail(email);
         if (user != null) {
             if (user.getPassword().equals(password)) {
                 // Log In Sucesso
                 Home.startActivity(this);
-                SessionManager.saveSession(this, user.getUserId());
+                SessionManager.saveSession(this, user.getuserId());
             } else {
                 // TODO: Avisar Utilizador
                 Log.i("MainActivity", "Password Errada!");
