@@ -22,7 +22,7 @@ public interface UserDAO {
     @Insert
     public void insertAll(List<User> InsertAll);
 
-    @Query("SELECT * FROM User WHERE email = email")
+    @Query("SELECT * FROM User WHERE email = :email")
     User getUserByEmail(String email);
 
 }
