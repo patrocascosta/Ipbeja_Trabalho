@@ -1,9 +1,9 @@
 package pt.ipbeja.tvtime.model;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
 
-import pt.ipbeja.tvtime.R;
+        import pt.ipbeja.tvtime.R;
 
 public class SignUp extends AppCompatActivity {
 
