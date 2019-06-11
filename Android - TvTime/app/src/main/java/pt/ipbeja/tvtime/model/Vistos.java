@@ -1,34 +1,15 @@
 package pt.ipbeja.tvtime.model;
 
-public class Vistos {
-    private long idUser;
-    private long idEpisodio;
-    private boolean visto;
-    private String minutos;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
+import pt.ipbeja.tvtime.R;
 
-    public Vistos(long idUser, long idEpisodio, boolean visto, String minutos){
-        this.idUser=idEpisodio;
-        this.idEpisodio=idEpisodio;
-        this.visto=visto;
-        this.minutos=minutos;
+public class Vistos extends AppCompatActivity {
 
-    }
-
-    public long getIdUser() {
-        return idUser;
-    }
-
-    public long getIdEpisodio() {
-        return idEpisodio;
-    }
-
-    public boolean getvisto() {
-        return visto;
-    }
-
-
-    public String getMinutos() {
-        return minutos;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_vistos);
     }
 }
