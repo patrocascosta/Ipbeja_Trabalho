@@ -1,6 +1,12 @@
 package pt.ipbeja.tvtime.model;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
+@Entity
 public class Favoritos {
+
+    @PrimaryKey(autoGenerate = true)
     private long idUser;
     private long idSerie;
     private boolean favorito;
