@@ -90,7 +90,7 @@
         android:textColor="@color/colorText"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintHorizontal_bias="0.658"
         app:layout_constraintStart_toStartOf="@+id/HomeBar"
         app:layout_constraintTop_toTopOf="parent" />
 
