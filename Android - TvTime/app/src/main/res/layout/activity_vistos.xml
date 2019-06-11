@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".model.Vistos">
 
     <ImageView
@@ -120,5 +121,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+=======
+    tools:context=".ui.VistosActivity">
+>>>>>>> 1c3c38473ed8268dd36cd59a0ae511b63cd5eaec
 
 </android.support.constraint.ConstraintLayout>
