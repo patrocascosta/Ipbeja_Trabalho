@@ -17,9 +17,12 @@ public interface UserDAO {
     public void update (user User);
 
     @Insert
-    public void insert(user User);
+   void insert(user User);
 
     @Insert
     public void insertAll(List<user> InsertAll);
+
+    @Query("SELECT * FROM user WHERE email = email")
+    user getUserByEmail(String email);
 
 }
