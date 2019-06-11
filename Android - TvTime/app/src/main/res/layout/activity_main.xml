@@ -4,13 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    tools:context=".ui.MainActivity"
+    android:id="@+id/front_page_"
 
-android:id="@+id/front_page_"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:background="#FFFFFF"
-    >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.MainActivity">
 
     <Button
 
@@ -39,7 +38,9 @@ android:background="#FFFFFF"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -59,14 +60,14 @@ android:background="#FFFFFF"
         android:layout_width="305dp"
         android:layout_height="54dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="24dp"
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
