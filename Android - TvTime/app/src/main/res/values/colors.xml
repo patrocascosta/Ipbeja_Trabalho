@@ -3,10 +3,7 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-<<<<<<< HEAD
     <color name="colorBar">#65C5E4</color>
     <color name="colorText">#FFFFFF</color>
-=======
     <color name="FF65C5E4">#008577</color>
->>>>>>> 7aff2073e1a1f2399b4d34bc40b23ddc20da5d21
 </resources>

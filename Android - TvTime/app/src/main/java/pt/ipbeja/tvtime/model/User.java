@@ -2,39 +2,38 @@ package pt.ipbeja.tvtime.model;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+
 @Entity
-public class User {
+public class user {
     @PrimaryKey(autoGenerate = true)
-private long UserId;
-private String Password;
-private String Email;
-private String Nacionalidade;
+    private long userId;
+    private String password;
+    private String email;
+    private String nacionalidade;
 
 
-public User(long UserId, String Password, String Email, String Nacionalidade){
-    this.UserId = UserId;
-    this.Password = Password;
-    this.Email = Email;
-    this.Nacionalidade = Nacionalidade;
-}
-
-
+    public user(long userId, String password, String email, String nacionalidade) {
+        this.userId = userId;
+        this.password = password;
+        this.email = email;
+        this.nacionalidade = nacionalidade;
+    }
 
 
     public long getUserId() {
 
-        return this.UserId;
+        return this.userId;
     }
 
     public String getPassword() {
-        return this.Password;
+        return this.password;
     }
 
     public String getEmail() {
-        return this.Email;
+        return this.email;
     }
 
     public String getNacionalidade() {
-        return this.Nacionalidade;
+        return this.nacionalidade;
     }
 }
