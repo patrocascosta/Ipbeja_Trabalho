@@ -39,4 +39,20 @@ public class User {
     public String getNacionalidade() {
         return this.nacionalidade= nacionalidade;
     }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
 }

@@ -7,9 +7,7 @@ import java.util.List;
 
 @Dao
 public interface TemporadasDAO {
-@Query("SELECT * FROM Temporadas")
+    @Query("SELECT * FROM Temporadas")
     public List<Temporadas> getAllTemporadas();
-
-
 }
 
