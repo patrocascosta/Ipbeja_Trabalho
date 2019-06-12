@@ -28,7 +28,17 @@ public abstract class AppDatabase extends RoomDatabase {
                     public void onCreate(@NonNull SupportSQLiteDatabase db) {
                         super.onCreate(db);
                         //Meter codigo sql
-                        db.execSQL("");
+                        db.execSQL("INSERT INTO Series(" +
+
+                                "nomeSerie, " +
+                                "idCategoria, " +
+                                "descricao, " +
+                                "imagem)" +
+                                "VALUES(" +
+
+                                        ")"
+
+                                );
 
                     }
                 })
