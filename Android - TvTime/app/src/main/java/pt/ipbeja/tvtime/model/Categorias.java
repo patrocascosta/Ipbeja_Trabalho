@@ -24,4 +24,12 @@ public class Categorias {
     public String getNomeCategoria() {
         return nomeCategoria;
     }
+
+    public void setIdCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
+    }
+
+    public void setNomeCategoria(String nomeCategoria) {
+        this.nomeCategoria = nomeCategoria;
+    }
 }
