@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.PesquisarActivity"></activity>
-        <activity android:name=".model.SingUp"></activity>
+        <activity android:name=".ui.SignUpActivity"></activity>
         <activity android:name=".ui.PesquisarActivity" />
         <activity android:name=".ui.VistosActivity" />
         <activity
