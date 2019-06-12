@@ -1,5 +1,7 @@
 package pt.ipbeja.tvtime.ui;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +10,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import pt.ipbeja.tvtime.R;
+import pt.ipbeja.tvtime.model.Favoritos;
 
 public class FavoritosActivity extends AppCompatActivity {
+
+    public static void startActivity(Context context) {
+        Intent intent = new Intent(context, FavoritosActivity.class);
+        context.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
