@@ -9,12 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".model.Vistos"></activity>
-=======
         <activity android:name=".ui.PesquisarActivity"></activity>
+        <activity android:name=".model.SingUp"></activity>
+        <activity android:name=".ui.PesquisarActivity" />
         <activity android:name=".ui.VistosActivity" />
->>>>>>> 1c3c38473ed8268dd36cd59a0ae511b63cd5eaec
         <activity
             android:name=".ui.FavoritosActivity"
             android:label="@string/title_activity_favoritos"
