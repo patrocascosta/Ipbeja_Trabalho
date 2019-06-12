@@ -7,17 +7,19 @@ import android.arch.persistence.room.PrimaryKey;
 public class Episodios {
 
     @PrimaryKey(autoGenerate = true)
+
     private long idEpisodio;
     private String nomeEpisodio;
     private int duracao;
     private int idTemporada;
 
-    public Episodios(long idEpisodio, String nomeEpisodio, int duracao, int idTemporada) {
-        this.idEpisodio = idEpisodio;
-        this.nomeEpisodio = nomeEpisodio;
-        this.duracao = duracao;
-        this.idTemporada = idTemporada;
-    }
+public Episodios(Long idEpisodio, String nomeEpisodio, int duracao, int idTemporad)  {
+    this.idEpisodio= idEpisodio;
+    this.nomeEpisodio= nomeEpisodio;
+    this.duracao= duracao;
+    this.idTemporada= idTemporad;
+
+}
 
     public long getIdEpisodio() {
         return idEpisodio;
@@ -37,17 +39,5 @@ public class Episodios {
 
     public int getIdTemporada() {
         return idTemporada;
-    }
-
-    public void setIdEpisodio(long idEpisodio) {
-        this.idEpisodio = idEpisodio;
-    }
-
-    public void setDuracao(int duracao) {
-        this.duracao = duracao;
-    }
-
-    public void setIdTemporada(int idTemporada) {
-        this.idTemporada = idTemporada;
     }
 }

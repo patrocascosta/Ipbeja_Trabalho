@@ -9,18 +9,19 @@ public class Series {
     private long idSerie;
     private String nomeSerie;
     private int idCategoria;
-    private int imdb;
+    private int Imdb;
     private String descricao;
     private String  imagem;
 
 
-    public Series(long idSerie, String nomeSerie, int idCategoria, int imdb, String descricao, String imagem) {
-        this.idSerie = idSerie;
-        this.nomeSerie = nomeSerie;
-        this.idCategoria = idCategoria;
-        this.imdb = imdb;
-        this.descricao = descricao;
-        this.imagem = imagem;
+    public Series(long idSerie, String nomeSerie, int idCategoria, int imdb, String descricao, String imagem){
+
+        this.idSerie= idSerie;
+        this.nomeSerie= nomeSerie;
+        this.idCategoria= idCategoria;
+        this.descricao=descricao;
+        this.imagem=imagem;
+
     }
 
     public long getIdSerie() {
@@ -29,7 +30,7 @@ public class Series {
 
 
     public int Imdb() {
-        return imdb;
+        return Imdb;
     }
     public int getIdCategoria() {
         return idCategoria;
@@ -44,34 +45,4 @@ public class Series {
     }
 
     public String getImagem() { return imagem;}
-
-    public int getImdb() {
-        return imdb;
-    }
-
-    public void setIdSerie(long idSerie) {
-        this.idSerie = idSerie;
-    }
-
-    public void setNomeSerie(String nomeSerie) {
-        this.nomeSerie = nomeSerie;
-    }
-
-    public void setIdCategoria(int idCategoria) {
-        this.idCategoria = idCategoria;
-    }
-
-    public void setImdb(int imdb) {
-        this.imdb = imdb;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public void setImagem(String imagem) {
-        this.imagem = imagem;
-    }
-
-
 }

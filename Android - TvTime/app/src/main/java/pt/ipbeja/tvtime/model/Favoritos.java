@@ -30,16 +30,4 @@ public class Favoritos {
     public boolean isFavorito() {
         return favorito;
     }
-
-    public void setIdUser(long idUser) {
-        this.idUser = idUser;
-    }
-
-    public void setIdSerie(long idSerie) {
-        this.idSerie = idSerie;
-    }
-
-    public void setFavorito(boolean favorito) {
-        this.favorito = favorito;
-    }
 }

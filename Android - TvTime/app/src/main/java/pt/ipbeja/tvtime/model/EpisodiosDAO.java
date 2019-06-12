@@ -10,20 +10,19 @@ import java.util.List;
 
 @Dao
 public interface EpisodiosDAO {
-
     @Query("SELECT * FROM Episodios")
-    public List<Episodios> getAllEpisodios();
+    public List<Categorias> GetAllEpisodios();
 
     @Update
     public void update(Episodios episodios);
 
     @Insert
-    public void insert(Episodios episodios);
+    public void insert (Episodios episodios);
 
     @Insert
-    public void insertAll(List<Episodios> episodios);
+    public void insertAll(List<Episodios> AllEpisodios);
 
     @Delete
-    public void remove(Episodios episodios);
+    public void remove (Episodios episodios);
 
 }

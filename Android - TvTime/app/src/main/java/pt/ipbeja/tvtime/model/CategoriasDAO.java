@@ -9,6 +9,6 @@ import java.util.List;
 public interface CategoriasDAO {
 
     @Query(" SELECT * FROM Categorias")
-    List<Categorias> getAllCategorias();
+    public List<Categorias>getAllCategorias();
 
 }
