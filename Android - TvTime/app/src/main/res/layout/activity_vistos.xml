@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context=".model.Vistos">
+    tools:context=".ui.VistosActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -74,41 +73,67 @@
         android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Favoritos"
-        tools:layout_editor_absoluteX="119dp"
-        tools:layout_editor_absoluteY="665dp" />
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Favoritos" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Ferramentas"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="665dp" />
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Ferramentas" />
 
     <ImageView
         android:id="@+id/imageView20"
         android:layout_width="62dp"
         android:layout_height="59dp"
-        app:srcCompat="@drawable/Rectangle"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="662dp" />
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:srcCompat="@drawable/Rectangle" />
 
     <ImageView
         android:id="@+id/imageView21"
         android:layout_width="47dp"
         android:layout_height="67dp"
-        app:srcCompat="@drawable/Vector"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="654dp" />
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/Vector" />
 
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/Home"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="664dp" />
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="664dp"
+        android:layout_marginEnd="385dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Home" />
 
     <ListView
         android:layout_width="0dp"
@@ -121,8 +146,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
-=======
-    tools:context=".ui.VistosActivity">
->>>>>>> 1c3c38473ed8268dd36cd59a0ae511b63cd5eaec
+
 
 </android.support.constraint.ConstraintLayout>
