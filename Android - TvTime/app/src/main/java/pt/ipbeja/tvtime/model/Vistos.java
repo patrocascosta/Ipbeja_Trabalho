@@ -1,5 +1,9 @@
 package pt.ipbeja.tvtime.model;
 
+<<<<<<< HEAD
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+=======
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
@@ -10,30 +14,15 @@ public class Vistos {
     private long idEpisodio;
     private boolean visto;
     private String minutos;
+>>>>>>> 1c3c38473ed8268dd36cd59a0ae511b63cd5eaec
 
+import pt.ipbeja.tvtime.R;
 
-    public Vistos(long idUser, long idEpisodio, boolean visto, String minutos){
-        this.idUser=idEpisodio;
-        this.idEpisodio=idEpisodio;
-        this.visto=visto;
-        this.minutos=minutos;
+public class Vistos extends AppCompatActivity {
 
-    }
-
-    public long getIdUser() {
-        return idUser;
-    }
-
-    public long getIdEpisodio() {
-        return idEpisodio;
-    }
-
-    public boolean getvisto() {
-        return visto;
-    }
-
-
-    public String getMinutos() {
-        return minutos;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_vistos);
     }
 }
