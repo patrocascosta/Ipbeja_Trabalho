@@ -8,7 +8,6 @@ import android.widget.EditText;
 
 import pt.ipbeja.tvtime.R;
 import pt.ipbeja.tvtime.model.AppDatabase;
-import pt.ipbeja.tvtime.model.SignUp;
 import pt.ipbeja.tvtime.model.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         String password = this.editTextPassword.getText().toString();
 
         if (email.isEmpty() || password.isEmpty()) {
-            // TODO: avisar o utilizador
+
             Log.i("MainActivity", "Preencher todos os campos!");
             return;
         }
@@ -45,21 +44,20 @@ public class MainActivity extends AppCompatActivity {
         User user = AppDatabase.getInstance(this).getUserDAO().getUserByEmail(email);
         if (user != null) {
             if (user.getPassword().equals(password)) {
-                // Log In Sucesso
+
                 Home.startActivity(this);
                 SessionManager.saveSession(this, user.getUserId());
             } else {
-                // TODO: Avisar Utilizador
+
                 Log.i("MainActivity", "Password Errada!");
             }
         } else {
-            // TODO: Avisar Utilizador
+
             Log.i("MainActivity", "Utilizador Não EXISTE!");
         }
     }
 
     public void signup(View view) {
-        SignUp.startActivity(this);
-    }
+        SignUpActivity.startActivity(this); }
 
 }

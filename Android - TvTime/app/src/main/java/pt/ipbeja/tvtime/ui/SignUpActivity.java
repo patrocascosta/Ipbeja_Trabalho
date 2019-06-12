@@ -1,4 +1,4 @@
-package pt.ipbeja.tvtime.model;
+package pt.ipbeja.tvtime.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,8 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 
 import pt.ipbeja.tvtime.R;
+import pt.ipbeja.tvtime.model.AppDatabase;
+import pt.ipbeja.tvtime.model.User;
 
-public class SignUp extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
 
     private EditText editTextEmail;
@@ -19,7 +21,7 @@ public class SignUp extends AppCompatActivity {
 
 
     public static void startActivity(Context context) {
-        Intent intent = new Intent(context, SignUp.class);
+        Intent intent = new Intent(context, SignUpActivity.class);
         context.startActivity(intent);
     }
 
@@ -39,8 +41,8 @@ public class SignUp extends AppCompatActivity {
         String nacionalidade = this.editTextNacionalidade.getText().toString();
 
         if (email.isEmpty() || password.isEmpty() || nacionalidade.isEmpty()) {
-            // TODO: avisar utilizador
-            Log.i("SignUp", "Tem de preencher os campos todos");
+
+            Log.i("SignUpActivity", "Tem de preencher os campos todos");
             return;
         }
 
