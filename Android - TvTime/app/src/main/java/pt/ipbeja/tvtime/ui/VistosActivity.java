@@ -15,7 +15,7 @@ public class VistosActivity extends AppCompatActivity {
     }
 
     public void gohome(View view) {
-        Home.startActivity(this);
+        HomePageActivity.startActivity(this);
     }
 
     public void gofavoritos(View view) {

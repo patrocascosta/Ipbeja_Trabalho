@@ -29,13 +29,8 @@ public abstract class AppDatabase extends RoomDatabase {
                             super.onCreate(db);
                             //Meter codigo sql
                             db.execSQL("INSERT INTO Series(nomeSerie, idCategoria, Imdb, descricao, imagem) " +
-                                    "VALUES ('Backlist','', '8,1', '\n" +
-                                    "Uma nova criadora de perfis do FBI, Elizabeth Keen, teve toda a sua vida arrancada quando um criminoso misterioso, Raymond Reddington, que escapou da captura por décadas, se entrega e insiste em falar apenas com ela.' , 'https://m.media-amazon.com/images/M/MV5BNTIxODc2Mzk3Nl5BMl5BanBnXkFtZTgwMTE5MjQxMDE@._V1_.jpg')");
-
-
-
-
-
+                                    "VALUES ('Backlist', 4, '8,1'," +
+                                    "'Uma nova criadora de perfis do FBI, Elizabeth Keen, teve toda a sua vida arrancada quando um criminoso misterioso, Raymond Reddington, que escapou da captura por décadas, se entrega e insiste em falar apenas com ela.' , 'https://m.media-amazon.com/images/M/MV5BNTIxODc2Mzk3Nl5BMl5BanBnXkFtZTgwMTE5MjQxMDE@._V1_.jpg')");
                         }
                     })
                     .build();

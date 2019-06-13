@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         long userId = SessionManager.getActiveSession(this);
         if (userId > 0) {
-            Home.startActivity(this);
+            HomePageActivity.startActivity(this);
             finish();
         }
     }
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         if (user != null) {
             if (user.getPassword().equals(password)) {
 
-                Home.startActivity(this);
+                HomePageActivity.startActivity(this);
                 SessionManager.saveSession(this, user.getUserId());
             } else {
 

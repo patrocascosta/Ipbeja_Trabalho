@@ -18,7 +18,7 @@
             android:name=".ui.FavoritosActivity"
             android:label="@string/title_activity_favoritos"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.Home" />
+        <activity android:name=".ui.HomePageActivity" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

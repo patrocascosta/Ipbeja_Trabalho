@@ -8,13 +8,13 @@ public class Series {
     @PrimaryKey(autoGenerate = true)
     private long idSerie;
     private String nomeSerie;
-    private int idCategoria;
-    private int imdb;
+    private long idCategoria;
+    private String imdb;
     private String descricao;
     private String  imagem;
 
 
-    public Series(long idSerie, String nomeSerie, int idCategoria, int imdb, String descricao, String imagem) {
+    public Series(long idSerie, String nomeSerie, long idCategoria, String imdb, String descricao, String imagem) {
         this.idSerie = idSerie;
         this.nomeSerie = nomeSerie;
         this.idCategoria = idCategoria;
@@ -28,10 +28,10 @@ public class Series {
     }
 
 
-    public int Imdb() {
+    public String Imdb() {
         return imdb;
     }
-    public int getIdCategoria() {
+    public long getIdCategoria() {
         return idCategoria;
     }
 
@@ -45,7 +45,7 @@ public class Series {
 
     public String getImagem() { return imagem;}
 
-    public int getImdb() {
+    public String getImdb() {
         return imdb;
     }
 
@@ -61,7 +61,7 @@ public class Series {
         this.idCategoria = idCategoria;
     }
 
-    public void setImdb(int imdb) {
+    public void setImdb(String imdb) {
         this.imdb = imdb;
     }
 

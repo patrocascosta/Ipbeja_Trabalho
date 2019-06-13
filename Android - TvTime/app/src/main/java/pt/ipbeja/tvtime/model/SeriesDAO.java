@@ -9,7 +9,10 @@ import java.util.List;
 public interface SeriesDAO {
 
     @Query("SELECT * FROM Series")
-    public List<Series> getAllSeries();
+    List<Series> getAllSeries();
+
+    @Query("SELECT * FROM Series WHERE idCategoria = :id")
+    List<Series> getSeriesByCategory(long id);
 
 
 }
