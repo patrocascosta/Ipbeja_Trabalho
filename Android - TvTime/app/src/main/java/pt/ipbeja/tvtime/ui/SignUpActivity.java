@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import pt.ipbeja.tvtime.R;
 import pt.ipbeja.tvtime.model.AppDatabase;
@@ -42,6 +43,14 @@ public class SignUpActivity extends AppCompatActivity {
 
         if (email.isEmpty() || password.isEmpty() || nacionalidade.isEmpty()) {
 
+            Context context = getApplicationContext();
+            CharSequence text = "Tem de preencher os campos todos!";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
+
             Log.i("SignUpActivity", "Tem de preencher os campos todos");
             return;
         }
@@ -49,7 +58,9 @@ public class SignUpActivity extends AppCompatActivity {
 
         User user = new User(1, email, password, nacionalidade);
         AppDatabase.getInstance(this).getUserDAO().insert(user);
-        finish();
+        //finish();
+            HomePageActivity.startActivity(this);
+
 
 
 
