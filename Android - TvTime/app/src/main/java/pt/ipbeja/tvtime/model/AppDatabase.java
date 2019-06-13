@@ -31,8 +31,10 @@ public abstract class AppDatabase extends RoomDatabase {
                             db.execSQL("INSERT INTO Series(nomeSerie, idCategoria, Imdb, descricao, imagem) " +
                                     "VALUES ('Backlist', 4, '8,1'," +
                                     "'Uma nova criadora de perfis do FBI, Elizabeth Keen, teve toda a sua vida arrancada quando um criminoso misterioso, Raymond Reddington, que escapou da captura por décadas, se entrega e insiste em falar apenas com ela.' , 'https://m.media-amazon.com/images/M/MV5BNTIxODc2Mzk3Nl5BMl5BanBnXkFtZTgwMTE5MjQxMDE@._V1_.jpg')");
+                            db.execSQL("INSERT INTO User(userId, password, email, nacionalidade)"+ "VALUES(1,'123','123','123','123')");
                         }
                     })
+
                     .build();
         }
         return INSTANCE;

@@ -47,7 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
 
 
-        User user = new User(0, email, password, nacionalidade);
+        User user = new User(1, email, password, nacionalidade);
         AppDatabase.getInstance(this).getUserDAO().insert(user);
         finish();
 
