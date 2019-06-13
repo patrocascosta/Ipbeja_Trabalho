@@ -11,18 +11,15 @@ import java.util.List;
 public interface UserDAO {
 
     @Query("SELECT * From User")
-    public List<User> GetAllUsers();
+    public List<User>GetAllUsers();
 
     @Update
-    public void update(User User);
+    public void update (User User);
 
     @Insert
-    void insert(User User);
+    public void insert(User User);
 
     @Insert
     public void insertAll(List<User> InsertAll);
-
-    @Query("SELECT * FROM User WHERE email = :email")
-    User getUserByEmail(String email);
 
 }
