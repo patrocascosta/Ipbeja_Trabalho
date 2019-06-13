@@ -29,4 +29,16 @@ public class Temporadas {
     public int getIdEpisodio() {
         return idEpisodio;
     }
+
+    public void setIdTemporada(long idTemporada) {
+        this.idTemporada = idTemporada;
+    }
+
+    public void setIdSerie(int idSerie) {
+        this.idSerie = idSerie;
+    }
+
+    public void setIdEpisodio(int idEpisodio) {
+        this.idEpisodio = idEpisodio;
+    }
 }

@@ -22,7 +22,10 @@ public class User {
 
     public long getUserId() {
 
-        return this.userId;
+        return userId;
+    }
+    public void setId(long id) {
+        this.userId = userId;
     }
 
     public String getPassword() {
@@ -30,10 +33,26 @@ public class User {
     }
 
     public String getEmail() {
-        return this.email;
+        return this.email= email;
     }
 
     public String getNacionalidade() {
-        return this.nacionalidade;
+        return this.nacionalidade= nacionalidade;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
     }
 }

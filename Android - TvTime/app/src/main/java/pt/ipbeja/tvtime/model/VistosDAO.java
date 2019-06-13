@@ -10,10 +10,10 @@ import java.util.List;
 public interface VistosDAO {
 
     @Query("SELECT * FROM Vistos")
-    public List<Vistos> getALlVistos();
+    public List<Vistos> getAllVistos();
 
     @Update
-    public void update (Vistos vistos);
+    public void update(Vistos vistos);
 
     @Update
     public void updateAll(List<Vistos> VistosList);

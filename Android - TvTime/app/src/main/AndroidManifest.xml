@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.PesquisarActivity"></activity>
+        <activity android:name=".ui.SignUpActivity"></activity>
+        <activity android:name=".ui.PesquisarActivity" />
         <activity android:name=".ui.VistosActivity" />
         <activity
             android:name=".ui.FavoritosActivity"
@@ -23,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".model.Vistos$Vistos" />
 
         <meta-data
             android:name="preloaded_fonts"
