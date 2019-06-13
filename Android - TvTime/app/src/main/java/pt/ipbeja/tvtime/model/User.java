@@ -4,7 +4,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity
-public class user {
+public class User {
     @PrimaryKey(autoGenerate = true)
     private long userId;
     private String password;
@@ -12,7 +12,7 @@ public class user {
     private String nacionalidade;
 
 
-    public user(long userId, String password, String email, String nacionalidade) {
+    public User(long userId, String password, String email, String nacionalidade) {
         this.userId = userId;
         this.password = password;
         this.email = email;
