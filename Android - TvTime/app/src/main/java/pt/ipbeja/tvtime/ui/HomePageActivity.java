@@ -12,8 +12,8 @@ import java.util.List;
 
 import pt.ipbeja.tvtime.R;
 import pt.ipbeja.tvtime.model.AppDatabase;
-import pt.ipbeja.tvtime.model.Categorias;
-import pt.ipbeja.tvtime.model.Series;
+import pt.ipbeja.tvtime.model.Categoria;
+import pt.ipbeja.tvtime.model.Serie;
 import pt.ipbeja.tvtime.model.SeriesDAO;
 
 public class HomePageActivity extends AppCompatActivity {
@@ -42,13 +42,13 @@ public class HomePageActivity extends AppCompatActivity {
 
     private void populateImageView() {
         SeriesDAO seriesDAO = AppDatabase.getInstance(this).getSeriesDAO();
-        List<Series> seriesThriller = seriesDAO.getSeriesByCategory(Categorias.THRILLER);
-        List<Series> seriesComedia = seriesDAO.getSeriesByCategory(Categorias.COMEDIA);
-        List<Series> seriesDrama = seriesDAO.getSeriesByCategory(Categorias.DRAMA);
-        List<Series> seriesCrime = seriesDAO.getSeriesByCategory(Categorias.CRIME);
+        List<Serie> seriesThriller = seriesDAO.getSeriesByCategory(Categoria.THRILLER);
+        List<Serie> seriesComedia = seriesDAO.getSeriesByCategory(Categoria.COMEDIA);
+        List<Serie> seriesDrama = seriesDAO.getSeriesByCategory(Categoria.DRAMA);
+        List<Serie> seriesCrime = seriesDAO.getSeriesByCategory(Categoria.CRIME);
 
         if (seriesThriller.size() > 0) {
-            Series serieThriller = seriesThriller.get(0); // obter primeiro elemento da lista de series com categoria Thriller (1)
+            Serie serieThriller = seriesThriller.get(0); // obter primeiro elemento da lista de series com categoria Thriller (1)
             if (serieThriller != null) { // verificar se o elemento está inicializado (diferente de null) - quer dizer que existe serie na posição 0 da lista
                 Glide.with(this).load(serieThriller.getImagem()).into(this.imageViewThriller); // Carregar imagem (url) dessa serie para a imagemView correspondente
             }
@@ -56,7 +56,7 @@ public class HomePageActivity extends AppCompatActivity {
 
 
         if (seriesComedia.size() > 0) {
-            Series serieComedia = seriesComedia.get(0);
+            Serie serieComedia = seriesComedia.get(0);
             if (serieComedia != null) {
                 Glide.with(this).load(serieComedia.getImagem()).into(this.imageViewThriller);
             }
@@ -64,7 +64,7 @@ public class HomePageActivity extends AppCompatActivity {
 
 
         if (seriesDrama.size() > 0) {
-            Series serieDrama = seriesDrama.get(0);
+            Serie serieDrama = seriesDrama.get(0);
             if (serieDrama != null) {
                 Glide.with(this).load(serieDrama.getImagem()).into(this.imageViewThriller);
             }
@@ -72,7 +72,7 @@ public class HomePageActivity extends AppCompatActivity {
 
 
         if (seriesCrime.size() > 0) {
-            Series serieCrime = seriesCrime.get(0);
+            Serie serieCrime = seriesCrime.get(0);
             if (serieCrime != null) {
                 Glide.with(this).load(serieCrime.getImagem()).into(this.imageViewThriller);
             }

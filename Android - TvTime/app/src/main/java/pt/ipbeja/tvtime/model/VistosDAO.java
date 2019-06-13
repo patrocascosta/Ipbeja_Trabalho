@@ -9,14 +9,14 @@ import java.util.List;
 @Dao
 public interface VistosDAO {
 
-    @Query("SELECT * FROM Vistos")
-    public List<Vistos> getAllVistos();
+    @Query("SELECT * FROM Visto")
+    public List<Visto> getAllVistos();
 
     @Update
-    public void update(Vistos vistos);
+    public void update(Visto visto);
 
     @Update
-    public void updateAll(List<Vistos> VistosList);
+    public void updateAll(List<Visto> vistoList);
 
 
 

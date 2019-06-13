@@ -10,7 +10,7 @@ import android.arch.persistence.room.PrimaryKey;
 import pt.ipbeja.tvtime.R;
 
 @Entity
-public class Vistos extends AppCompatActivity  {
+public class Visto extends AppCompatActivity  {
     @PrimaryKey(autoGenerate = true)
     private long idUser;
     private long idEpisodio;
@@ -22,7 +22,7 @@ public class Vistos extends AppCompatActivity  {
         setContentView(R.layout.activity_vistos);
     }
 
-public Vistos(long idUser, long idEpisodio, boolean visto, String minutos){
+public Visto(long idUser, long idEpisodio, boolean visto, String minutos){
 
     this.idUser=idUser;
     this.idEpisodio= idEpisodio;

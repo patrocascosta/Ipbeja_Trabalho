@@ -8,7 +8,7 @@ import java.util.List;
 @Dao
 public interface CategoriasDAO {
 
-    @Query(" SELECT * FROM Categorias")
-    List<Categorias> getAllCategorias();
+    @Query(" SELECT * FROM Categoria")
+    List<Categoria> getAllCategorias();
 
 }

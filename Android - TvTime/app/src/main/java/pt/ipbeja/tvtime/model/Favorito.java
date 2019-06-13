@@ -4,7 +4,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity
-public class Favoritos {
+public class Favorito {
 
     @PrimaryKey(autoGenerate = true)
     private long idUser;
@@ -13,7 +13,7 @@ public class Favoritos {
 
 
 
-    public Favoritos(long idUser, long idSerie, boolean favorito ){
+    public Favorito(long idUser, long idSerie, boolean favorito ){
         this.idUser= idUser;
         this.idSerie=idSerie;
         this.favorito=favorito;

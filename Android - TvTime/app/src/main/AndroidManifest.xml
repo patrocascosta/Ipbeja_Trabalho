@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".model.Vistos$Vistos" />
+        <activity android:name=".model.Visto$Vistos" />
 
         <meta-data
             android:name="preloaded_fonts"

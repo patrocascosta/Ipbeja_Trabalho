@@ -11,19 +11,19 @@ import java.util.List;
 @Dao
 public interface FavoritosDAO {
 
-    @Query("SELECT * FROM Favoritos")
-    public List<Favoritos> getAllFavoritos();
+    @Query("SELECT * FROM Favorito")
+    public List<Favorito> getAllFavoritos();
 
     @Update
-    public void update(Favoritos favoritos);
+    public void update(Favorito favorito);
 
     @Insert
-    public void insert(Favoritos favoritos);
+    public void insert(Favorito favorito);
 
     @Insert
-    public void insertAll(List<Favoritos> favoritosLista);
+    public void insertAll(List<Favorito> favoritoLista);
 
     @Delete
-    public void remove(Favoritos favoritos);
+    public void remove(Favorito favorito);
 
 }

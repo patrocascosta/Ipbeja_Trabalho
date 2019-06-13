@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import pt.ipbeja.tvtime.R;
-import pt.ipbeja.tvtime.model.Favoritos;
 
 public class FavoritosActivity extends AppCompatActivity {
 

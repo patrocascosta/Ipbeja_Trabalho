@@ -8,11 +8,11 @@ import java.util.List;
 @Dao
 public interface SeriesDAO {
 
-    @Query("SELECT * FROM Series")
-    List<Series> getAllSeries();
+    @Query("SELECT * FROM Serie")
+    List<Serie> getAllSeries();
 
-    @Query("SELECT * FROM Series WHERE idCategoria = :id")
-    List<Series> getSeriesByCategory(long id);
+    @Query("SELECT * FROM Serie WHERE idCategoria = :id")
+    List<Serie> getSeriesByCategory(long id);
 
 
 }

@@ -4,7 +4,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity
-public class Temporadas {
+public class Temporada {
     @PrimaryKey(autoGenerate = true)
     private long idTemporada;
     private int idSerie;
@@ -12,7 +12,7 @@ public class Temporadas {
 
 
 
-    public Temporadas(long idTemporada, int idSerie, int idEpisodio){
+    public Temporada(long idTemporada, int idSerie, int idEpisodio){
         this.idTemporada=idTemporada;
         this.idSerie=idSerie;
         this.idEpisodio=idEpisodio;

@@ -7,7 +7,7 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-@Database(entities = {User.class, Series.class}, version = 1)
+@Database(entities = {User.class, Serie.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserDAO getUserDAO();

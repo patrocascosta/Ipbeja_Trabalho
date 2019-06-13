@@ -5,7 +5,7 @@ import android.arch.persistence.room.PrimaryKey;
 
 @Entity
 
-public class Categorias {
+public class Categoria {
 
     public static final long THRILLER = 1;
     public static final long COMEDIA = 2;
@@ -17,7 +17,7 @@ public class Categorias {
     private String nomeCategoria;
 
 
-    public Categorias(int idCategoria, String nomeCategoria){
+    public Categoria(int idCategoria, String nomeCategoria){
         this.idCategoria= idCategoria;
         this.nomeCategoria=nomeCategoria;
 

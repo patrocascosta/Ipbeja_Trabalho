@@ -4,7 +4,7 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity
-public class Series {
+public class Serie {
     @PrimaryKey(autoGenerate = true)
     private long idSerie;
     private String nomeSerie;
@@ -14,7 +14,7 @@ public class Series {
     private String  imagem;
 
 
-    public Series(long idSerie, String nomeSerie, long idCategoria, String imdb, String descricao, String imagem) {
+    public Serie(long idSerie, String nomeSerie, long idCategoria, String imdb, String descricao, String imagem) {
         this.idSerie = idSerie;
         this.nomeSerie = nomeSerie;
         this.idCategoria = idCategoria;
