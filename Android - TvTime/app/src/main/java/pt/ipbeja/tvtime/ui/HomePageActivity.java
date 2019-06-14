@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -58,7 +59,7 @@ public class HomePageActivity extends AppCompatActivity {
         if (seriesComedia.size() > 0) {
             Serie serieComedia = seriesComedia.get(0);
             if (serieComedia != null) {
-                Glide.with(this).load(serieComedia.getImagem()).into(this.imageViewThriller);
+                Glide.with(this).load(serieComedia.getImagem()).into(this.imageViewComedia);
             }
         }
 
@@ -66,7 +67,7 @@ public class HomePageActivity extends AppCompatActivity {
         if (seriesDrama.size() > 0) {
             Serie serieDrama = seriesDrama.get(0);
             if (serieDrama != null) {
-                Glide.with(this).load(serieDrama.getImagem()).into(this.imageViewThriller);
+                Glide.with(this).load(serieDrama.getImagem()).into(this.imageViewDrama);
             }
         }
 
@@ -74,10 +75,18 @@ public class HomePageActivity extends AppCompatActivity {
         if (seriesCrime.size() > 0) {
             Serie serieCrime = seriesCrime.get(0);
             if (serieCrime != null) {
-                Glide.with(this).load(serieCrime.getImagem()).into(this.imageViewThriller);
+                Glide.with(this).load(serieCrime.getImagem()).into(this.imageViewCrime);
             }
         }
 
 
+    }
+
+    public void gofavoritos(View view) {
+        FavoritosActivity.startActivity(this);
+    }
+
+    public void govistos(View view) {
+        VistosActivity.startActivity(this);
     }
 }

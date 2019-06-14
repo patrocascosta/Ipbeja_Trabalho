@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
                 HomePageActivity.startActivity(this);
                 SessionManager.saveSession(this, user.getUserId());
+                finish();
             } else {
 
                 Context context = getApplicationContext();

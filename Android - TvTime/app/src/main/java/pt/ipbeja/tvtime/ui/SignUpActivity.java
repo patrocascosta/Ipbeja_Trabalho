@@ -55,14 +55,15 @@ public class SignUpActivity extends AppCompatActivity {
             return;
         }
 
-
+        HomePageActivity.startActivity(this);
         User user = new User(1, email, password, nacionalidade);
         AppDatabase.getInstance(this).getUserDAO().insert(user);
-        //finish();
-            HomePageActivity.startActivity(this);
+        finish();
 
 
+    }
 
-
+    public void gologin (View view) {
+        finish();
     }
 }
