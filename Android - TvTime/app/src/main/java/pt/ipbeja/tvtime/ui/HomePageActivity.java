@@ -89,4 +89,9 @@ public class HomePageActivity extends AppCompatActivity {
     public void govistos(View view) {
         VistosActivity.startActivity(this);
     }
+
+    public void logout(View view) {
+        SessionManager.deleteSession(this);
+        finish();
+    }
 }

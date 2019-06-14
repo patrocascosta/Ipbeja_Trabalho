@@ -28,4 +28,9 @@ public class VistosActivity extends AppCompatActivity {
     public void gofavoritos(View view) {
         FavoritosActivity.startActivity(this);
     }
+
+    public void logout(View view) {
+        SessionManager.deleteSession(this);
+        finish();
+    }
 }
