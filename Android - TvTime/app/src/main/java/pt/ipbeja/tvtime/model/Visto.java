@@ -13,52 +13,48 @@ import pt.ipbeja.tvtime.R;
 public class Visto extends AppCompatActivity  {
     @PrimaryKey(autoGenerate = true)
     private long idUser;
-    private long idEpisodio;
+    private long idSerie;
     private boolean visto;
-    private String minutos;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistos);
     }
 
-public Visto(long idUser, long idEpisodio, boolean visto, String minutos){
+public Visto(long idUser, long idSerie, boolean visto){
 
     this.idUser=idUser;
-    this.idEpisodio= idEpisodio;
+    this.idSerie= idSerie;
     this.visto= visto;
-    this.minutos= minutos;
+
 }
 
     public long getIdUser() {
         return idUser;
     }
 
-    public long getIdEpisodio() {
-        return idEpisodio;
+    public long getIdSerie() {
+        return idSerie;
     }
 
     public boolean isVisto() {
         return visto;
     }
 
-    public String getMinutos() {
-        return minutos;
-    }
+
 
     public void setIdUser(long idUser) {
         this.idUser = idUser;
     }
 
-    public void setIdEpisodio(long idEpisodio) {
-        this.idEpisodio = idEpisodio;
+    public void setIdSerie(long idEpisodio) {
+        this.idSerie = idSerie;
     }
 
     public void setVisto(boolean visto) {
         this.visto = visto;
     }
 
-    public void setMinutos(String minutos) {
-        this.minutos = minutos;
-    }
+
 }
