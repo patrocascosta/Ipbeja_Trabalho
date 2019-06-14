@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.578"
-        app:srcCompat="@drawable/ferramentas" />
+        app:srcCompat="@drawable/logout" />
 
     <ImageView
         android:id="@+id/imageView17"
