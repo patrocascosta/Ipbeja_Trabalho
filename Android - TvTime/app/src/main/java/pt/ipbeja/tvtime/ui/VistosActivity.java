@@ -31,6 +31,7 @@ public class VistosActivity extends AppCompatActivity {
 
     public void logout(View view) {
         SessionManager.deleteSession(this);
+        MainActivity.startActivity(this);
         finish();
     }
 }

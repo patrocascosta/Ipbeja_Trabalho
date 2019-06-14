@@ -52,8 +52,9 @@ public abstract class AppDatabase extends RoomDatabase {
                                     "VALUES('The Chilling Adventures of Sabrina', 3, '7,7'," +
                                     "'Reimagines the origin and adventures of Sabrina: the Teenage Witch as a dark coming-of-age story that traffics in horror, the occult and, of course, witchcraft. Tonally in the vein of Rosemarys Baby and The Exorcist, this adaptation finds Sabrina Spellman wrestling to reconcile her dual nature - half-witch, half-mortal - while standing against the evil forces that threaten her, her family and the daylight world humans inhabit.' , 'https://m.media-amazon.com/images/M/MV5BMTg3MjY1MDUxMV5BMl5BanBnXkFtZTgwMzczNTU2NzM@._V1_SY1000_CR0,0,675,1000_AL_.jpg')");
 
-                            db.execSQL("INSERT INTO User(password, email, nacionalidade)"+ "VALUES('123','123','123')");
                             db.execSQL("INSERT INTO User(password, email, nacionalidade)"+ "VALUES('123','teste','Potuguesa')");
+                            db.execSQL("INSERT INTO User(password, email, nacionalidade)"+ "VALUES('123','123','123')");
+
 
                             //db.execSQL("INSERT INTO Visto (idUser, idEpisodio, visto, minutos)" + "VALUES(2,'')");
                         }
