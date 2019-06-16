@@ -56,7 +56,7 @@ public abstract class AppDatabase extends RoomDatabase {
                             db.execSQL("INSERT INTO User(password, email, nacionalidade)"+ "VALUES('123','123','123')");
 
 
-                            //db.execSQL("INSERT INTO Visto (idUser, idEpisodio, visto, minutos)" + "VALUES(2,'')");
+                            db.execSQL("INSERT INTO Visto (idUser, idSerie, visto)" + "VALUES(2, 6, 'true')");
                         }
                     })
 
