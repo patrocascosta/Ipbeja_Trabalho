@@ -27,12 +27,12 @@ public class VistosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistos);
 
-        List<Visto> seriesVistas = VistosDAO.getIdSerie
+        //List<Visto> seriesVistas = VistosDAO.getIdSerie
 
 
-        ListView listView = findViewById(R.id.listViewVistos);
-        VistosAdapter adapter = new VistosAdapter(Visto.getIdSerie(), this);
-        listView.setAdapter(adapter);
+        //ListView listView = findViewById(R.id.listViewVistos);
+        //VistosAdapter adapter = new VistosAdapter(Visto.getIdSerie(), this);
+        //listView.setAdapter(adapter);
 
 
 
