@@ -2,7 +2,6 @@
 /* CSS Document */
 
 body {
-	margin-top: 20px;
 	background-image: url("imagens/lowpoly.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -11,6 +10,7 @@ body {
 .centerlogo {
 	padding: 2px;
 	display: block;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 12%;
@@ -33,7 +33,7 @@ body {
 }
 
 p {
-	font-family: "open Sans";
+	font-family: Tahoma, Geneva, sans-serif;
 	text-align: center;
 	font-size: 18px;
 }
@@ -49,7 +49,7 @@ p {
   padding-top: 10px;
   padding-right: 200px;
   padding-left: 200px;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -61,10 +61,10 @@ p {
 .grid-container2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 50px;
-  padding-right: 150px;
-  padding-left: 150px;
-  margin-top: 25px;
+  grid-gap: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -77,12 +77,19 @@ p.smaller {
 	font-size: 14px;
 }
 
+footer {
+	margin-top: 40px;
+	color: #FFF;
+	background-color: #333;
+	width: 100%;
+	display: inline-block;
+}
 
 @media screen and (max-width: 800px) { 
   .grid-container{	
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 5px;
+  grid-gap: 8px;
   padding: 5px;
   margin-top: 10px;
   margin-right: auto;
