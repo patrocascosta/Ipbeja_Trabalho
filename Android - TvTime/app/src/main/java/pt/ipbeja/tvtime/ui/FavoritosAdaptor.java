@@ -6,38 +6,38 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-//import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
 import java.util.List;
 
 import pt.ipbeja.tvtime.R;
-import pt.ipbeja.tvtime.model.Serie;
+import pt.ipbeja.tvtime.model.Favorito;
 
-public class VistosAdapter extends BaseAdapter {
+public class FavoritosAdaptor extends BaseAdapter {
 
-    private List<Serie> serieList;
+    private List<Favorito> favoritoList;
     private Context context;
 
-    public VistosAdapter (List<Serie> serieList, Context context) {
-        this.serieList = serieList;
+    public FavoritosAdaptor(List<Favorito> favoritoList, Context context){
+        this.favoritoList = favoritoList;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return this.serieList.size();
+        return this.favoritoList.size();
     }
 
     @Override
-    public Serie getItem(int position) {
-        return this.serieList.get(position);
+    public Favorito getItem(int position) {
+        return this.favoritoList.get(position);
     }
 
-
     @Override
-    public long getItemId(int position) { return getItem(position).getIdSerie(); }
+    public long getItemId(int position) {
+        return getItem(position).getIdFavoritos();
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -46,17 +46,15 @@ public class VistosAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(this.context).inflate(R.layout.listavistos, parent, false);
         }
 
-        Serie serie = this.getItem(position);
+        Favorito favorito = this.getItem(position);
 
         ImageView imageView = convertView.findViewById(R.id.imageView6);
         ImageView imageView2 = convertView.findViewById(R.id.imageView4);
 
 
-        Glide.with(this.context).load(serie.getImagem()).into(imageView);
-        Glide.with(this.context).load(serie.getImagem()).into(imageView2);
+        Glide.with(this.context).load(favorito.getImagem()).into(imageView);
+        Glide.with(this.context).load(favorito.getImagem()).into(imageView2);
 
         return convertView;
     }
 }
-
-
