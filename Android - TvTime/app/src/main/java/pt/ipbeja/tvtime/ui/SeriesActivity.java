@@ -6,7 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import java.util.List;
+
 import pt.ipbeja.tvtime.R;
+import pt.ipbeja.tvtime.model.AppDatabase;
+import pt.ipbeja.tvtime.model.Categoria;
+import pt.ipbeja.tvtime.model.Serie;
+import pt.ipbeja.tvtime.model.SeriesDAO;
 
 public class SeriesActivity extends Activity {
 
@@ -24,7 +30,12 @@ private ImageView imageViewSeries;
 
         this.imageViewSeries = findViewById(R.id.imageViewSerie);
 
+        //this.populateall();
     }
 
 
+    private void populateall(){
+        SeriesDAO seriesDAO = AppDatabase.getInstance(this).getSeriesDAO();
+        List<Serie> seriesThriller = seriesDAO.getSeriesByid();
+    }
 }
