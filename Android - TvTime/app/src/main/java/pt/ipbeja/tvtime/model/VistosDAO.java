@@ -18,6 +18,9 @@ public interface VistosDAO {
     @Update
     public void updateAll(List<Visto> vistoList);
 
+    @Query("SELECT * FROM visto WHERE idSerie= :id AND visto= :visto")
+    Visto getVistosBySerieId(long id, boolean visto );
+
 
 
 }

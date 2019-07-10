@@ -10,13 +10,15 @@ import android.widget.ListView;
 import java.util.List;
 
 import pt.ipbeja.tvtime.R;
+import pt.ipbeja.tvtime.model.AppDatabase;
 import pt.ipbeja.tvtime.model.Serie;
 import pt.ipbeja.tvtime.model.SeriesDAO;
 import pt.ipbeja.tvtime.model.Visto;
 import pt.ipbeja.tvtime.model.VistosDAO;
 
 public class VistosActivity extends AppCompatActivity {
-
+private  static long serieId;
+private boolean visto;
     public static void startActivity(Context context) {
         Intent intent = new Intent(context, VistosActivity.class);
         context.startActivity(intent);
@@ -26,11 +28,11 @@ public class VistosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vistos);
+        VistosDAO vistosDAO = AppDatabase.getInstance(this).getVistosDAO();
+        List<Visto> seriesVistas = vistosDAO.getVistosBySerieId(serieId, );
 
-        List<Visto> seriesVistas = VistosDAO
-
-
-        //ListView listView = findViewById(R.id.listViewVistos);
+if (){}
+        ListView listView = findViewById(R.id.listViewVistos);
         //VistosAdapter adapter = new VistosAdapter(Visto.getIdSerie(), this);
         //listView.setAdapter(adapter);
 
