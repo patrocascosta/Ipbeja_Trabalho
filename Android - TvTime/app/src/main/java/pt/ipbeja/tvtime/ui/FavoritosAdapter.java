@@ -20,6 +20,8 @@ public class FavoritosAdapter extends BaseAdapter {
         this.context = context;
     }
 
+
+
     @Override
     public int getCount() {
         return 0;
@@ -39,4 +41,11 @@ public class FavoritosAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         return null;
     }
+
+
+
+
+
 }
+
+
