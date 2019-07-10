@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/imageViewSerie"
         android:layout_width="136dp"
         android:layout_height="211dp"
         android:layout_marginStart="16dp"
@@ -35,7 +35,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSerie"
         tools:layout_editor_absoluteY="111dp" />
 
     <TextView
@@ -60,7 +60,7 @@
         android:layout_marginEnd="8dp"
         android:src="@drawable/star"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSerie"
         app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
     <TextView
@@ -74,6 +74,6 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSerie"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </android.support.constraint.ConstraintLayout>
