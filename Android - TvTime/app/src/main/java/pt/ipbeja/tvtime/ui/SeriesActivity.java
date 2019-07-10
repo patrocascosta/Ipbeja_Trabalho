@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -23,9 +24,8 @@ public class SeriesActivity extends AppCompatActivity {
         private long serieId;
 
 
-    public static void startActivity(Context context, long serieId) {
+    public static void startActivity(Context context) {
         Intent intent = new Intent(context, SeriesActivity.class);
-        intent.putExtra(EXTRA_SERIE_ID, serieId);
         context.startActivity(intent);
     }
 
@@ -46,14 +46,16 @@ public class SeriesActivity extends AppCompatActivity {
     this.textViewNome= findViewById(R.id.textViewNome);
     this.textViewPontuação= findViewById(R.id.textViewPontuacao);
     this.textViwDescricao= findViewById(R.id.textViewDescricao);
-    this.checkBoxTemporadas=findViewById(R.id.checkBox);
 
     Serie serie = AppDatabase.getInstance(this).getSeriesDAO().getSerieById(this.serieId);
 
     this.textViewNome.setText(serie.getNomeSerie());
     this.textViwDescricao.setText(serie.getDescricao());
     this.textViewPontuação.setText(serie.getImdb());
-   // this.checkBoxTemporadas.setVisibility();
+
+
+
+
 
     }
 }

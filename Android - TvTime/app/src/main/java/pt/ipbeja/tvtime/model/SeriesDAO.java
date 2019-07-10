@@ -15,7 +15,8 @@ public interface SeriesDAO {
     List<Serie> getSeriesByCategory(long id);
 
     @Query("SELECT * FROM serie WHERE idSerie= :id")
-  Serie getSerieById(long id)
-            ;
+    Serie getSerieById(long id);
+
+
 
 }

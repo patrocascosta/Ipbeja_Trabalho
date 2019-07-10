@@ -7,11 +7,14 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-@Database(entities = {User.class, Serie.class}, version = 1)
+@Database(entities = {User.class, Serie.class, Visto.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserDAO getUserDAO();
     public abstract SeriesDAO getSeriesDAO();
+    public abstract VistosDAO getVistosDAO();
+
+
 
     private static AppDatabase INSTANCE;
 
@@ -56,7 +59,7 @@ public abstract class AppDatabase extends RoomDatabase {
                             db.execSQL("INSERT INTO User(password, email, nacionalidade)"+ "VALUES('123','123','123')");
 
 
-                            db.execSQL("INSERT INTO Visto (idUser, idSerie, visto)" + "VALUES(2, 6, 'true')");
+                            db.execSQL("INSERT INTO Visto (idUser, idSerie, visto)" + "VALUES(1, 1, 'true')");
                         }
                     })
 

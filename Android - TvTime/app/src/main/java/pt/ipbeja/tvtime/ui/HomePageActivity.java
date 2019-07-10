@@ -52,6 +52,7 @@ public class HomePageActivity extends AppCompatActivity {
             Serie serieThriller = seriesThriller.get(0); // obter primeiro elemento da lista de series com categoria Thriller (1)
             if (serieThriller != null) { // verificar se o elemento está inicializado (diferente de null) - quer dizer que existe serie na posição 0 da lista
                 Glide.with(this).load(serieThriller.getImagem()).into(this.imageViewThriller); // Carregar imagem (url) dessa serie para a imagemView correspondente
+
             }
         }
 
@@ -94,5 +95,10 @@ public class HomePageActivity extends AppCompatActivity {
         SessionManager.deleteSession(this);
         MainActivity.startActivity(this);
         finish();
+    }
+
+    public void goSeries(View view) {
+        SeriesActivity.startActivity(this);
+
     }
 }
