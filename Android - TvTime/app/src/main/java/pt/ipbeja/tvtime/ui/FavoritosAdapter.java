@@ -24,6 +24,8 @@ public class FavoritosAdapter extends BaseAdapter {
         this.context = context;
     }
 
+
+
     @Override
     public int getCount() {
         return this.favoritoList.size();
@@ -57,4 +59,11 @@ public class FavoritosAdapter extends BaseAdapter {
 
         return convertView;
     }
+
+
+
+
+
 }
+
+

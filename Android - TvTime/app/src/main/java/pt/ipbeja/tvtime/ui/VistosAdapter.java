@@ -14,13 +14,14 @@ import java.util.List;
 
 import pt.ipbeja.tvtime.R;
 import pt.ipbeja.tvtime.model.Serie;
+import pt.ipbeja.tvtime.model.Visto;
 
 public class VistosAdapter extends BaseAdapter {
 
     private List<Serie> serieList;
     private Context context;
 
-    public VistosAdapter (List<Serie> serieList, Context context) {
+    public VistosAdapter ( Context context) {
         this.serieList = serieList;
         this.context = context;
     }
@@ -42,20 +43,24 @@ public class VistosAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
+      Serie serie = this.getItem(position);
+
         if (convertView == null){
             convertView = LayoutInflater.from(this.context).inflate(R.layout.listavistos, parent, false);
         }
 
-        Serie serie = this.getItem(position);
 
-        ImageView imageView = convertView.findViewById(R.id.imageView6);
-        ImageView imageView2 = convertView.findViewById(R.id.imageView4);
+
+        ImageView imageView = convertView.findViewById(R.id.imageView);
 
 
         Glide.with(this.context).load(serie.getImagem()).into(imageView);
-        Glide.with(this.context).load(serie.getImagem()).into(imageView2);
 
         return convertView;
+    }
+    public void updateList(List<Serie> seriesList){
+        this.serieList= seriesList;
+        notifyDataSetChanged();
     }
 }
 
