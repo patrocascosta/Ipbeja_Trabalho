@@ -17,6 +17,10 @@ public interface SeriesDAO {
     @Query("SELECT * FROM serie WHERE idSerie= :id")
     Serie getSerieById(long id);
 
+    @Query("SELECT *FROM serie WHERE imagem = :imagem")
+    Serie getSeriebyImagem(String imagem);
 
+    @Query("SELECT *FROM serie WHERE visto= 'true'")
+    List<Serie> getSeriebyVistos(Boolean visto);
 
 }

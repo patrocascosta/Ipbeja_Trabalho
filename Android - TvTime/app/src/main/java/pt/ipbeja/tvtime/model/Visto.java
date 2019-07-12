@@ -14,7 +14,7 @@ public class Visto extends AppCompatActivity  {
     @PrimaryKey(autoGenerate = true)
     private long idUser;
     private long idSerie;
-    private boolean visto;
+    public boolean visto = true;
 
 
     protected void onCreate(Bundle savedInstanceState) {

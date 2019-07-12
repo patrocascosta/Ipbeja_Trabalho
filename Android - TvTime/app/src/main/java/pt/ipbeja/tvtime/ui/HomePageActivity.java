@@ -16,6 +16,7 @@ import pt.ipbeja.tvtime.model.AppDatabase;
 import pt.ipbeja.tvtime.model.Categoria;
 import pt.ipbeja.tvtime.model.Serie;
 import pt.ipbeja.tvtime.model.SeriesDAO;
+import pt.ipbeja.tvtime.model.Visto;
 
 public class HomePageActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class HomePageActivity extends AppCompatActivity {
     private ImageView imageViewComedia;
     private ImageView imageViewDrama;
     private ImageView imageViewCrime;
+    private Boolean visto;
 
     public static void startActivity(Context context) {
         Intent intent = new Intent(context, HomePageActivity.class);
@@ -43,10 +45,13 @@ public class HomePageActivity extends AppCompatActivity {
 
     private void populateImageView() {
         SeriesDAO seriesDAO = AppDatabase.getInstance(this).getSeriesDAO();
+
         List<Serie> seriesThriller = seriesDAO.getSeriesByCategory(Categoria.THRILLER);
         List<Serie> seriesComedia = seriesDAO.getSeriesByCategory(Categoria.COMEDIA);
         List<Serie> seriesDrama = seriesDAO.getSeriesByCategory(Categoria.DRAMA);
         List<Serie> seriesCrime = seriesDAO.getSeriesByCategory(Categoria.CRIME);
+
+        //List<Serie> serieVista = seriesDAO.getSeriebyVistos(Visto.visto);
 
         if (seriesThriller.size() > 0) {
             Serie serieThriller = seriesThriller.get(0); // obter primeiro elemento da lista de series com categoria Thriller (1)

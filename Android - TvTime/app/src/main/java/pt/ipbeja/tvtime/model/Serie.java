@@ -12,15 +12,26 @@ public class Serie {
     private String imdb;
     private String descricao;
     private String  imagem;
+    public Boolean visto;
 
 
-    public Serie(long idSerie, String nomeSerie, long idCategoria, String imdb, String descricao, String imagem) {
+
+    public Serie(long idSerie, String nomeSerie, long idCategoria, String imdb, String descricao, String imagem, Boolean visto) {
         this.idSerie = idSerie;
         this.nomeSerie = nomeSerie;
         this.idCategoria = idCategoria;
         this.imdb = imdb;
         this.descricao = descricao;
         this.imagem = imagem;
+        this.visto= visto;
+    }
+
+    public Boolean getVisto() {
+        return visto;
+    }
+
+    public void setVisto(Boolean visto) {
+        this.visto = visto;
     }
 
     public long getIdSerie() {
